@@ -1,7 +1,6 @@
 
 import {
   IconArrowRight,
-  IconDownload,
   IconSparkles,
 } from "@tabler/icons-react";
 
@@ -26,7 +25,6 @@ function HeroVisual() {
 
       {/* Profile photo */}
       <div className="animate-pf-float relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/15 bg-slate-900 shadow-2xl shadow-violet-600/30">
-
         <img
           src="/images/Image.jpeg"
           alt="Sirivennela Akula"
@@ -89,19 +87,11 @@ export function Hero() {
             {profile.intro}
           </p>
 
+          {/* Explore Projects Button */}
           <div
             className="animate-pf-fade-up mt-10 flex flex-wrap gap-4"
             style={{ animationDelay: "0.4s" }}
           >
-            <button
-              type="button"
-              onClick={() => window.print()}
-              className="inline-flex items-center gap-2 rounded-full bg-violet-500 px-6 py-3 font-medium text-white shadow-lg shadow-violet-600/30 transition hover:-translate-y-0.5 hover:bg-violet-400"
-            >
-              <IconDownload size={18} />
-              Download Resume
-            </button>
-
             <a
               href="#projects"
               onClick={(event) => {
